@@ -92,6 +92,7 @@ class ServerChanPusher:
         level = level_text.get(horo["fortune_level"], "平")
 
         # 构建消息
+        newline = "\n"
         message = f"""# 🔮 每日运势提醒
 
 **📅 {date} {weekday}**
@@ -132,13 +133,13 @@ class ServerChanPusher:
 
 ## ✅ 宜做事项
 
-{"\n".join(['- ' + item for item in final['do_list']])}
+{newline.join(['- ' + item for item in final['do_list']])}
 
 ---
 
 ## ❌ 不宜做事项
 
-{"\n".join(['- ' + item for item in final['dont_list']])}
+{newline.join(['- ' + item for item in final['dont_list']])}
 
 ---
 
