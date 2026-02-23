@@ -132,13 +132,13 @@ class ServerChanPusher:
 
 ## ✅ 宜做事项
 
-{chr(10).join(['- ' + item for item in final['do_list']])}
+{"\n".join(['- ' + item for item in final['do_list']])}
 
 ---
 
 ## ❌ 不宜做事项
 
-{chr(10).join(['- ' + item for item in final['dont_list']])}
+{"\n".join(['- ' + item for item in final['dont_list']])}
 
 ---
 
